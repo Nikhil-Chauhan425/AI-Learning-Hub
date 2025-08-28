@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow-x:hidden;
+}
+section{
+    width: 100%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+#nav{
+
+ display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+#items{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 20px;
+    /* always give padding to make it look from top and side a little away */
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+#nav h1{
+    font-size: 30px;
+    display: flex;
+    gap: 5px;
+    padding-left: 50px;
+}
+#nav h4{
+    font-weight: 525;
+}
+#items button{
+    position: relative;
+    padding: 15px 50px;
+    font-weight: 525;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    z-index: 1;
+}
+#items button:hover::before{
+    width: 100%;
+}
+#items button::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: .5s all ease;
+}
+#nav h1 i{
+    rotate: 45deg;
+    display: inline-block;
+}
+.centre{
+      height: 80%;
+      width: 100%;
+      display: flex;
+      padding: 70px 80px;
+}
+.centre_1{
+    height: 100%;
+    width: 50%;
+}
+.centre_2{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.centre_1 h1{
+    font-size: 90px;
+    font-weight: 500;
+    
+    
+}
+.centre_1 p{
+    font-size: 25px;
+}
+.centre_1 pre{
+    width: 200px;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: black;
+    color:white;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+.centre_2 img{
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left: 110px;
+    
+}
+.bottom_sec{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottom_sec img{
+    width: 200px;
+    margin-bottom: 40%;
+
+}
+.section2{
+    display: flex;
+    padding: 80px 100px;
+}
+.services{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+.services h1{
+    font-size: 30px;
+    font-weight: 500;
+     background-color:#9AE975;
+     width: 160px;
+     height: 80px;
+     padding: 2px 33px ;
+     border-radius: 10px;
+}
+.section2 pre{
+    font-size: 18px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    padding: 40px 120px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.elem{
+    margin-top:100px;
+    width: 45%;
+    height: 200px;
+    border: 2px solid black;
+    
+    border-radius: 50px;
+    flex-shrink: 0;
+    box-shadow: 0px 10px 0px black;
+}
+.elem {
+    position: relative; /* if you have absolute children */
+    z-index: 1;         /* make sure it's above overlays */
+    font-size: 19px;
+}
+
+
+
+.elem {
+    margin-top: 100px;
+    width: 45%;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50px;
+    flex-shrink: 0;
+    box-shadow: 0px 10px 0px black;
+    position: relative;
+    font-size: 19px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth effect */
+}
+
+.elem:hover {
+    transform: scale(1.05); /* slightly increase size */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* add soft shadow */
+    cursor: pointer;
+}
+
+.elem a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.elem a {
+    pointer-events: auto;  /* ensure link is clickable */
+    color: black;
+    cursor: pointer;
+    
+    
+}
+.no-underline {
+    text-decoration: none;  /* remove underline */
+    color: inherit;         /* keep text color same as parent */
+    cursor: pointer;        /* show clickable cursor */
+}
+.chat{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    left: 80%;
+    bottom: 60%;
+}
+a{
+    font-size: 20px;
+}
+.extra_page{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+.all_container{
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    background-color:white;
+    
+}
+.hero_container{
+      width: 100%;
+      height: 200px;
+      background-color: rgb(210, 207, 207);
+      border-radius: 20px;
+      position: relative;
+
+}
+.hero_container h1{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 80px;
+}
+.bottom_content p{
+    font-size: 40px;
+    margin-top: 5%;
+}
+.part1{
+    width: 50%;
+    height: 500px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+.part2{
+    width: 50%;
+    height: 500px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+.bottom_content{
+    display: flex;
+}
+.part1 img{
+    position: absolute;
+    width: 80%;
+    height: 400px;
+    left: 80px;
+    top: 10%;
+    border-radius: 20px;
+}
+.part2 p{
+    font-size: 30px;
+    text-align: justify;
+}
+.page-1{
+    margin-top: 10px;
+
+}
+.page-1 h1{
+    background-color: #9AE975;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    width: 1000px;
+    height:55px;
+    margin-top: 5%;
+    margin-left: 18%;
+    border-radius: 5px;
+    
+}
+.page-2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.page-2 h1{
+    background-color: #9AE975;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    width: 500px;
+    height:55px;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 5px;
+}
+.page-2 pre{
+    margin-left: 30%;
+}
+    
